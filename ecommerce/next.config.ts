@@ -1,8 +1,12 @@
-export default {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: 'export',
-  basePath: '/Quick_Pick',
+  basePath: '/Quick-Pick',
+  assetPrefix: '/Quick-Pick/',
   images: {
     unoptimized: true,
     domains: ['cdn.dummyjson.com', 'i.dummyjson.com'],
   },
 };
+
+export default nextConfig;
